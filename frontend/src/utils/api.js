@@ -111,7 +111,7 @@ class Api {
 }
 
 const api = new Api({
-    url: `http://localhost:3000`,
+    url: `http://localhost:8080`,
     headers: {
         'Accept': 'application/json',
         'Content-Type': 'application/json'

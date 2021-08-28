@@ -11,7 +11,7 @@ const { login, createUser } = require('./controllers/users');
 const { errorLogger } = require('./middlewares/logger');
 const auth = require('./middlewares/auth');
 
-const { PORT = 3000 } = process.env;
+const { PORT = 8080 } = process.env;
 
 mongoose.connect('mongodb://localhost:27017/mestodb', {
   useNewUrlParser: true,

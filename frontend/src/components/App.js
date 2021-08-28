@@ -127,7 +127,7 @@ function App() {
     }
 
     function handleAddPlaceSubmit(data) {
-        api.addCard(data)
+        api.addCard(data, localStorage.token)
             .then((newCard) => {
                 setCards([newCard, ...cards]);
                 closeAllPopups()
